@@ -522,7 +522,7 @@ footer {
 }
 
 @media screen and (max-width: 510px) {
-    #header__btn {
+    .header__phone .ordercall__btn {
         padding: 10px 20px;
     }
 
@@ -580,7 +580,7 @@ footer {
 
     }
 
-    #header__btn {
+    .header__phone .ordercall__btn {
         margin-left: 0;
     }
 

@@ -16,7 +16,7 @@ $(document).ready(function () {
         if(name == '') {
             alert('Введите имя');            
         } else {
-            $.post('/api.php', {'name' : name}, function(response){
+            $.post('script/api.php', {'name' : name}, function(response){
                 alert(response);
             });
         }

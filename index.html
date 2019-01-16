@@ -24,6 +24,19 @@
         </div>
     </header>
 
+    <div id="popupContainer">
+        <div id="popup">
+            <p id="popup__text">Форма заявки</p>
+            <input id="popup__name" type="text" value="" placeholder="Имя" required>
+            <input id="popup__phone" type="tel" value="" placeholder="Телефон" required>
+            <input id="popup__submit" type="submit" value="Заказать проект">
+            <div class="popup__agreement">
+                <input type="checkbox" id="popup__checkbox" name="popup__checkbox" required>
+                <p>Я согласен с условиями обработки персональных данных</p>
+            </div>
+        </div>
+    </div>
+
     <div class="about">
         <div class="about__content">
             <div class="about__text">
@@ -150,8 +163,10 @@
         </div>
     </footer>
     <div class="footer__copyright">
-            <p>© Дмитрий Алексеев, 2016 – 2018</p>
-        </div>
+        <p>© Дмитрий Алексеев, 2016 – 2018</p>
+    </div>
+
+    <script src="script/jquery-3.3.1.min.js"></script>
     <script src="script/script.js"></script>
 </body>
 

@@ -438,6 +438,7 @@ footer {
 
     .services__item {        
         width: 34%;
+        padding-bottom: 30px;
     }
 
     .gallery__block {        
@@ -498,6 +499,11 @@ footer {
         margin-bottom: 30px;
     }    
 }
+
+@media screen and (max-width: 450px) {
+    .services__item {        
+        width: 60%;        
+    }
 
 @media screen and (max-width: 398px) {
     .header {

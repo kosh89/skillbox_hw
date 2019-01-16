@@ -13,10 +13,11 @@ $(document).ready(function () {
 
     $('#popup__submit').click(function(){
         var name = $('#popup__name').val();
+        var phone = $('#popup__phone').val();
         if(name == '') {
-            alert('Введите имя');            
+            alert('Введите имя');
         } else {
-            $.post('script/api.php', {'name' : name}, function(response){
+            $.post('script/api.php', {'name' : name, 'phone' : phone}, function(response){
                 alert(response);
             });
         }

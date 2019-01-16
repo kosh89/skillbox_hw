@@ -3,6 +3,6 @@
     $stmt = $pdo->prepare('SELECT time, name, phone FROM orders');
     $stmt->execute();
     foreach ($stmt as $row) {
-        echo $row['time'] . ' | ' . $row['name'] . ' | ' . $row['phone'];
+        echo '<pre>' .  $row['time'] . ' | ' . $row['name'] . ' | ' . $row['phone'] . '</pre>';
     }
 ?>

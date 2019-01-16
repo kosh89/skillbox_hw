@@ -55,7 +55,7 @@ header {
     font-weight: bold;
 }
 
-#header__btn {
+.header__phone .ordercall__btn {
     padding: 15px 35px;
     background: #fff;
     font-size: 14px;
@@ -64,7 +64,7 @@ header {
     color: #fc557c;
 }
 
-#header__btn:hover {
+.header__phone .ordercall__btn:hover {
     padding: 15px 35px;
     background: #fc557c;
     color: #fff;
@@ -385,7 +385,7 @@ footer {
     justify-content: space-evenly;
 }
 
-#footer__btn {
+.footer__item .ordercall__btn {
     padding: 15px 35px;
     background: #fff;
     font-size: 14px;
@@ -395,7 +395,7 @@ footer {
     width: 100%;
 }
 
-#footer__btn:hover {
+.footer__item .ordercall__btn:hover {
     
     background: #fc557c;
     font-size: 14px;

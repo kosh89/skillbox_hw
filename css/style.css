@@ -459,8 +459,6 @@ footer {
 
 @media screen and (max-width: 900px) {
     #about__img {
-        /* right: 61px; */
-        /* top: 99px; */
         width: 300px;
         height: 300px;
         position: static;
@@ -478,14 +476,16 @@ footer {
     }
 }
 
-@media screen and (max-width: 900px) {
-    .header {
-        
-        flex-direction: column;
-        
+@media screen and (max-width: 728px) {
+    .header {        
+        flex-direction: column;        
         height: 120px;
         align-items: center;
         padding-top: 20px;
+    }
+
+    .header a {
+        margin: 5px;
     }
 }
 
@@ -565,6 +565,19 @@ footer {
 @media screen and (max-width: 450px) {
     .services__item {        
         width: 60%;        
+    }
+
+    .services__img {
+        width: 64px;
+    }
+
+    .services__img img {
+        width: 100%;
+    }
+
+    .services__text p {
+        font-size: 14px;
+        padding-top: 10px;
     }
 }
 

@@ -14,8 +14,11 @@ $(document).ready(function () {
     $('#popup__submit').click(function () {
         var name = $('#popup__name').val();
         var phone = $('#popup__phone').val();
-        if (name == '') {
-            alert('Введите имя');
+        /* var popupCheckbox = $('#popup__checkbox'); */
+        if (name == '' || phone == '') {
+            alert('Заполните поля');
+        } else if ($('#popup__checkbox').prop('checked') == false) {
+            alert('Согласись, а?')
         } else {
             $.post('script/api.php', { 'name': name, 'phone': phone }, function (response) {
                 alert(response);

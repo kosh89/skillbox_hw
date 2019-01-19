@@ -13,9 +13,9 @@
     <header>
         <div class="header">
             <div class="header__links">
-                <a id="header__services" href="#">Услуги</a>
-                <a id="header__portfolio" href="#">Портфолио</a>
-                <a id="header__cost" href="#">Стоимость</a>
+                <a id="header__services" href="#services">Услуги</a>
+                <a id="header__portfolio" href="#gallery">Портфолио</a>
+                <a id="header__cost" href="#promo">Стоимость</a>
             </div>
             <div class="header__phone">
                 <p>+7 (499) 995-55-77</p>
@@ -42,13 +42,13 @@
             <div class="about__text">
                 <h1>Дмитрий Алексеев</h1>
                 <p>Frontend-разработчик и веб-верстальщик</p>
-                <button id="about__more">Узнать больше</button>
+                <button id="about__more" class="ordercall__btn">Узнать больше</button>
             </div>
             <img id="about__img" src="img/dmitry.png">
         </div>
     </div>
 
-    <div class="services">
+    <div class="services" id="services">
         <div class="services__title">
             <p>Что я делаю</p>
         </div>
@@ -86,10 +86,10 @@
                 </div>
             </div>
         </div>
-        <button id="services__btn">Узнать стоимость</button>
+        <button id="services__btn" class="ordercall__btn">Узнать стоимость</button>
     </div>
 
-    <div class="gallery">
+    <div class="gallery" id="gallery">
         <div class="gallery__content">
             <div class="gallery__title">
                 <p>Примеры моих работ</p>
@@ -120,11 +120,11 @@
                     </div>
                 </div>
             </div>
-            <button id="gallery__btn">Заказать проект</button>
+            <button id="gallery__btn" class="ordercall__btn">Заказать проект</button>
         </div>
     </div>
 
-    <div class="promo">
+    <div class="promo" id="promo">
         <div class="promo__content">
             <h1>Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h1>
             <p>* Срок и стоимость могут отличаться от заявленных и рассчитываются индивидуально,
@@ -135,9 +135,11 @@
     <footer>
         <div class="footer__content">
             <div class="footer__item">
-                <a id="footer__services" href="#">Услуги</a>
-                <a id="footer__portfolio" href="#">Портфолио</a>
-                <a id="footer__cost" href="#">Стоимость</a>
+                <div class="footer__links">
+                    <a id="footer__services" href="#services">Услуги</a>
+                    <a id="footer__portfolio" href="#gallery">Портфолио</a>
+                    <a id="footer__cost" href="#promo">Стоимость</a>
+                </div>
             </div>
 
             <div class="footer__item">
@@ -167,7 +169,7 @@
     </div>
 
     <script src="script/jquery-3.3.1.min.js"></script>
-    <script src="script/script.js"></script>
+    <script src="script/modal.js"></script>    
 </body>
 
 </html>

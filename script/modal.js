@@ -2,6 +2,7 @@ $(document).ready(function () {
     $('.ordercall__btn').click(function () {
         $('#popupContainer').css('display', 'flex');
         $('body').css('overflow', 'hidden');
+        
     })
 
     $('#popupContainer').click(function (event) {
